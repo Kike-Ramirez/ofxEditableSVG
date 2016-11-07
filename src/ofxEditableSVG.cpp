@@ -148,8 +148,8 @@ void ofxEditableSVG::draw(){
     
     ofPushMatrix();
     ofTranslate(x,y);
-    
 	for(int i = 0; i < paths.size(); i++){
+        paths[i]->setColor(colorEngine);
         paths[i]->draw();
  	}
     ofPopMatrix();
@@ -274,6 +274,12 @@ void ofxEditableSVG::setFillColor(ofColor col){
     fill = col;
     // ofLog()<<"setFillColor"<<endl;
 };
+
+void ofxEditableSVG::setColorEngine(ofColor col_){
+
+    colorEngine = col_;
+
+}
 
 
 void ofxEditableSVG::setFillColor(ofColor col,int path){

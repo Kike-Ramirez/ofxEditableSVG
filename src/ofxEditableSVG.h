@@ -80,6 +80,7 @@ class ofxEditableSVG {
         //applies to whole shape
         void setFilled(bool t);
         void setFillColor(ofColor col);
+        void setColorEngine(ofColor col);
         void setStrokeWidth(float f);
         void setStrokeColor(ofColor col);//use to set alpha too
         bool getFilled();
@@ -178,6 +179,7 @@ class ofxEditableSVG {
         bool isFilled;
         ofColor fill;
         ofColor stroke;
+        ofColor colorEngine;
         float strokeWidth;
 
     
