@@ -144,6 +144,14 @@ void ofxEditableSVG::parseXML(string xml){
     }
 }
 
+void ofxEditableSVG::scale(float x, float y) {
+
+	for (int i = 0; i < paths.size(); i++) {
+		paths[i]->scale(x, y);
+		paths[i]->draw();
+	}
+}
+
 void ofxEditableSVG::draw(){
     
     ofPushMatrix();

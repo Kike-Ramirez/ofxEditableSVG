@@ -70,6 +70,7 @@ class ofxEditableSVG {
 			return height;
 		}
 		void load(string path);
+		void scale(float x, float y);
 		void draw();
 
         int getNumPath();
