@@ -146,13 +146,13 @@ void ofxEditableSVG::parseXML(string xml){
 
 void ofxEditableSVG::draw(){
     
-    ofPushMatrix();
-    ofTranslate(x,y);
+    //ofPushMatrix();
+    //ofTranslate(x,y);
 	for(int i = 0; i < paths.size(); i++){
         paths[i]->setColor(colorEngine);
         paths[i]->draw();
  	}
-    ofPopMatrix();
+    //ofPopMatrix();
 }
 
 
